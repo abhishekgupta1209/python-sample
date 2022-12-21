@@ -1,4 +1,9 @@
 node{
+  stage('Checkout') {
+        
+        deleteDir()
+        checkout scm
+    }
   stage ("Stage 1"){
     sh 'python3 --version'
     sh 'pytest'
