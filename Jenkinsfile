@@ -1,10 +1,10 @@
 node{
   stage ("Stage 1"){
-    bat 'python --version'
-    bat 'pip install coverage'
-    bat 'coverage run test_test1.py'
-    bat 'coverage report'
-    bat 'coverage xml'
+    sh 'python --version'
+//     sh 'pip install coverage'
+    sh 'coverage run test_test1.py'
+    sh 'coverage report'
+    sh 'coverage xml'
   }
   
 }
